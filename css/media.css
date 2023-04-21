@@ -10,6 +10,9 @@
         margin: 0 auto;
         padding-bottom: 50px;
     }
+    .abou_us__content{
+        text-align: center;
+      }
 }
 @media (min-width: 1001px){
     #hamburger_menu__toggle,.menu-toggler{
@@ -38,7 +41,6 @@
         transition: transform 0.4s;
       }
       .container__background{
-        
         margin: 100px auto;
       }
 }
