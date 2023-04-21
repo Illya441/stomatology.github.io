@@ -4,6 +4,7 @@
     }
     .container__background{
         flex-direction: column;
+        margin: 50px auto;
       }
     .abou_us__content{
         margin: 0 auto;
@@ -35,5 +36,9 @@
         bottom: -2px;
         transform: scaleX(0);
         transition: transform 0.4s;
+      }
+      .container__background{
+        
+        margin: 100px auto;
       }
 }
