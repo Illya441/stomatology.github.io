@@ -6,7 +6,7 @@ $(document).ready(function() {
         console.log(headerHeight)
         $('html, body').animate({
             scrollTop: $(linkHref).offset().top - headerHeight // Add it to the calculation here
-        }, 1300);
+        }, 800);
         e.preventDefault();
       });
     });
