@@ -1,0 +1,106 @@
+@media (max-width: 1000px){
+    /* скрываем чекбокс */
+  #hamburger_menu__toggle {
+    opacity: 0; 
+  }
+  /* стилизуем кнопку */
+  .menu-toggler {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center; /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    width: 26px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu-toggler__line,
+  .menu-toggler__line::before,
+  .menu-toggler__line::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #24274a;
+  }
+  .menu-toggler__line::before {
+    content: "";
+    top: -8px;
+  }
+  .menu-toggler__line::after {
+    content: "";
+    top: 8px;
+  }
+  .hamburger-menu {
+    right: 0;
+    position: absolute;
+    z-index: 50;
+  }
+  /* контейнер меню */
+  .menu {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    padding: 70px 0;
+    list-style: none;
+    text-align: center;
+    background: linear-gradient(to top, #24274a, #494970, #6f6f98, #9896c2, #c2c0ee);
+    box-shadow: -20px 0px 77px 47px #000;
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #191a30;
+  }
+  .menu__item:hover {
+    background-color: #ffffff;
+    color: #191a30;
+  }
+  #hamburger_menu__toggle:checked ~ .menu-toggler .menu-toggler__line {
+    transform: rotate(45deg);
+  }
+  #hamburger_menu__toggle:checked ~ .menu-toggler .menu-toggler__line::before {
+    top: 0;
+    right: 0;
+    transform: rotate(0);
+  }
+  #hamburger_menu__toggle:checked ~ .menu-toggler .menu-toggler__line::after {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+  }
+  #hamburger_menu__toggle:checked ~ .menu {
+    visibility: visible;
+    right: 0;
+  }
+  .menu-toggler__line,
+  .menu-toggler__line::before,
+  .menu-toggler__line::after {
+    transition-duration: 0.25s;
+  }
+  .menu {
+    transition-duration: 0.25s;
+  }
+  .menu__item {
+    transition-duration: 0.25s;
+  }
+}
+/* @media(max-width: 900px){
+  .menu-toggler{
+    right: 25px;
+  }
+} */

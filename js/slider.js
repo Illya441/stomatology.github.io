@@ -7,9 +7,9 @@ let swiper = new Swiper(".mySwiper", {
     },
 
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false,
     },
-    speed: 500, // Add this line to change the speed
+    speed: 800, // Add this line to change the speed
     
 });
