@@ -23,7 +23,7 @@
         justify-content: center;
     }
     .menu__item:hover {
-        color: #e195aa;
+        color: #67cfd6;
       }
       .menu__item:hover:before {
         transform: scaleX(1);
@@ -33,7 +33,7 @@
         content: "";
         width: 100%;
         height: 3px;
-        background-color: #e195aa;
+        background-color: #67cfd6;
         position: absolute;
         left: 0;
         bottom: -2px;
