@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,100;1,200&display=swap');
+
 
 /* ************************************************************ */
 /* HTML */
@@ -6,13 +6,14 @@ html,
 body {
   counter-reset: section;
   font-size: 20px;
-  height: 300vh;
-  font-family: 'Pathway Extreme', sans-serif;
+  height: 245vh;
+
 }
 a {
   cursor: pointer;
 }
-.address_item--hover:hover {
+.item--hover:hover,
+.contacts_item--hover:hover {
   color: #67cfd6;
 }
 
@@ -189,9 +190,7 @@ a {
     background-position: 500px -600px;
   }
 }
-.ss{
-  height: 900px;
-}
+
 /* ******************************accordion****************************** */
 .accordion__item {
   margin-bottom: 15px;
@@ -264,4 +263,50 @@ a {
   flex-direction: column;
   row-gap: 30px;
   margin: 0 auto;
+}
+/* ******************************stock****************************** */
+.stock__container{
+  z-index: 1;
+  max-width: 600px;
+  width: 100%;
+  margin: 50px 50px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  background-color: rgba(83, 145, 150, 0.73);
+  border: 1px solid #47777a ;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.stock{
+  display: flex;
+  justify-content: center;
+}
+/* ******************************footer****************************** */
+.footer{
+  
+}
+.contacts{
+  display: flex;
+  margin: 30px auto;
+  justify-content: space-between;
+  column-gap: 50px;
+  padding: 50px;
+  align-items: center;
+}
+.map{
+  max-width: 700px;
+  width: 100%;
+  height: 300px;
+}
+.contacts__list{
+display: flex;
+flex-direction: column;
+row-gap: 20px;
+}
+.contacts_item{
+  display: flex;
+  font-weight: 550;
+  align-items: center;
 }

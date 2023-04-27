@@ -11,6 +11,16 @@
         padding-bottom: 50px;
     }
     .abou_us__content{
+        text-align:  justify;
+
+      }
+      .contacts{
+        flex-direction: column;
+      }
+      .map{   
+      margin: 20px auto 0 auto;
+      }
+      .abou_us__content .text--shadow:nth-child(1),.abou_us__content .text--shadow:nth-child(2){
         text-align: center;
       }
 }

@@ -50,7 +50,7 @@
     padding: 70px 0;
     list-style: none;
     text-align: center;
-    background: linear-gradient(to top, #24274a, #494970, #6f6f98, #9896c2, #c2c0ee);
+    background: linear-gradient(to bottom, #73cfd6, #72ccd3, #71cad1, #70c7ce, #6fc5cc, #6cc0c7, #6abbc1, #67b6bc, #62adb2, #5da3a9, #589a9f, #539196);
     box-shadow: -20px 0px 77px 47px #000;
   }
   /* элементы меню */
@@ -64,7 +64,7 @@
     font-size: 20px;
     line-height: 24px;
     color: #ffffff;
-    background-color: #191a30;
+    background-color: #4e868a;
   }
   .menu__item:hover {
     background-color: #ffffff;
