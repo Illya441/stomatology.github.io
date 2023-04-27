@@ -6,7 +6,8 @@ html,
 body {
   counter-reset: section;
   font-size: 20px;
-  height: 245vh;
+  max-height: 300vh;
+  height: 100%;
 
 }
 a {
@@ -284,9 +285,6 @@ a {
   justify-content: center;
 }
 /* ******************************footer****************************** */
-.footer{
-  
-}
 .contacts{
   display: flex;
   margin: 30px auto;
