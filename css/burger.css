@@ -8,7 +8,7 @@
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center; /* центрируем содержимое кнопки */
     position: fixed;
-    top: 30px;
+    top: 15px;
     right: 50px;
     width: 26px;
     height: 50px;
@@ -33,11 +33,6 @@
     content: "";
     top: 8px;
   }
-  .hamburger-menu {
-    right: 0;
-    position: absolute;
-    z-index: 50;
-  }
   /* контейнер меню */
   .menu {
     position: fixed;
@@ -51,7 +46,7 @@
     list-style: none;
     text-align: center;
     background: linear-gradient(to bottom, #73cfd6, #72ccd3, #71cad1, #70c7ce, #6fc5cc, #6cc0c7, #6abbc1, #67b6bc, #62adb2, #5da3a9, #589a9f, #539196);
-    box-shadow: -20px 0px 77px 47px #000;
+    box-shadow: -10px 1px 19px 0px rgba(0,0,0,0.21);
   }
   /* элементы меню */
   .menu__item {
@@ -99,8 +94,3 @@
     transition-duration: 0.25s;
   }
 }
-/* @media(max-width: 900px){
-  .menu-toggler{
-    right: 25px;
-  }
-} */

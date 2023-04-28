@@ -1,29 +1,28 @@
+/* ******************************MAX****************************** */
 @media (max-width: 1000px){
     .address{
         display: none;
     }
-    .container__background{
-        flex-direction: column;
-        margin: 50px auto;
-      }
-    .abou_us__content{
-        margin: 0 auto;
-        padding-bottom: 50px;
+    .container__about_us{
+      flex-direction: column;
     }
-    .abou_us__content{
-        text-align:  justify;
-
-      }
-      .contacts{
-        flex-direction: column;
-      }
-      .map{   
-      margin: 20px auto 0 auto;
-      }
-      .abou_us__content .text--shadow:nth-child(1),.abou_us__content .text--shadow:nth-child(2){
-        text-align: center;
-      }
+    .about_us{
+      padding: 50px 0;
+    }
 }
+@media (max-width: 1000px){
+  .stock__container>.title{
+    font-size: 45px;
+  }
+
+}
+@media (max-width: 700px){
+  .contacts{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+/* ******************************MIN****************************** */
 @media (min-width: 1001px){
     #hamburger_menu__toggle,.menu-toggler{
         display: none;
@@ -50,7 +49,12 @@
         transform: scaleX(0);
         transition: transform 0.4s;
       }
-      .container__background{
-        margin: 100px auto;
+      .menu{
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+      }
+      .about_us{
+        padding: 119px 0;
       }
 }

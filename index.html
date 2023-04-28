@@ -1,151 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="css/burger.css" />
     <link rel="website icon" type="ico" href="img/icon.ico" />
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>Stomat Family</title>
-</head>
-<body>
-        <address class="address">
-            <ul class="address_list">
-                <li class="address_item item--hover">
-                    <img src="img/address.png" class="item_img" /><a href="https://www.google.com/maps/place/Стоматология+доктора+Васильева+О.И.,+проспект+Героїв+Сталінграда,+18-Б,+Київ,+04210/@50.5082945,30.5128695,16z/data=!4m14!1m7!3m6!1s0x40d4d2198efdc975:0xaad9e6ae1d7ffe10!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGPINC00L7QutGC0L7RgNCwINCS0LDRgdC40LvRjNC10LLQsCDQni7QmC4sINC_0YDQvtGB0L_QtdC60YIg0JPQtdGA0L7Rl9CyINCh0YLQsNC70ZbQvdCz0YDQsNC00LAsIDE4LdCRLCDQmtC40ZfQsiwgMDQyMTA!8m2!3d50.5082945!4d30.5128695!16s%2Fg%2F11c6vvrw3h!3m5!1s0x40d4d2198efdc975:0xaad9e6ae1d7ffe10!8m2!3d50.5082945!4d30.5128695!16s%2Fg%2F11c6vvrw3h?authuser=0" target="_blank">Проспект Героїв Сталінграда,18-Б</a></li>
-                <li class="address_item"><img src="img/worktime.png" class="item_img"/><span>Пн, Ср, Пт<br>С 10:00-19:00</span></li>
-                <li class="address_item item--hover"><img src="img/phone.png" class="item_img"/><a href="tel:+380685677358">+38 (068) 567 73 58</a></li>
+  </head>
+  <body>
+    <address class="address">
+      <ul class="container container_address">
+        <li class="address_item item--hover">
+          <img src="img/address.png" class="item_img" /><a
+            href="https://www.google.com/maps/place/Стоматология+доктора+Васильева+О.И.,+проспект+Героїв+Сталінграда,+18-Б,+Київ,+04210/@50.5082945,30.5128695,16z/data=!4m14!1m7!3m6!1s0x40d4d2198efdc975:0xaad9e6ae1d7ffe10!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGPINC00L7QutGC0L7RgNCwINCS0LDRgdC40LvRjNC10LLQsCDQni7QmC4sINC_0YDQvtGB0L_QtdC60YIg0JPQtdGA0L7Rl9CyINCh0YLQsNC70ZbQvdCz0YDQsNC00LAsIDE4LdCRLCDQmtC40ZfQsiwgMDQyMTA!8m2!3d50.5082945!4d30.5128695!16s%2Fg%2F11c6vvrw3h!3m5!1s0x40d4d2198efdc975:0xaad9e6ae1d7ffe10!8m2!3d50.5082945!4d30.5128695!16s%2Fg%2F11c6vvrw3h?authuser=0"
+            target="_blank"
+            >Проспект Героїв Сталінграда,18-Б</a
+          >
+        </li>
+        <li class="address_item">
+          <img src="img/worktime.png" class="item_img" /><span
+            >Пн, Ср, Пт<br />С 10:00-19:00</span
+          >
+        </li>
+        <li class="address_item item--hover">
+          <img src="img/phone.png" class="item_img" /><a
+            href="tel:+380685677358"
+            >+38 (068) 567 73 58</a
+          >
+        </li>
+      </ul>
+    </address>
+    <header class="header">
+        <div class="container container_menu">
+            <img src="img/Logo.png" alt="" class="Logo" />
+          <input id="hamburger_menu__toggle" type="checkbox" />
+          <label class="menu-toggler" for="hamburger_menu__toggle">
+            <span class="menu-toggler__line"></span>
+          </label>
+          <nav class="menu">
+            <ul class="menu_list">
+              <li class="menu__item">
+                <a href="#about_us" class="menu_link">Про нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="#services" class="menu_link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="#stock" class="menu_link">Акции</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu_link">Контакты</a>
+              </li>
             </ul>
-        </address>   
- <header class="header">
-        <img src="img/Logo.png" alt="" class="Logo"/>
-        <div class="hamburger-menu">
-            <input id="hamburger_menu__toggle" type="checkbox" />
-            <label class="menu-toggler" for="hamburger_menu__toggle">
-              <span class="menu-toggler__line"></span>
-            </label>
-            <nav class="menu">
-                <ul class="menu_list">
-                    <li class="menu__item"><a href="#about_us" class="menu_link">Про нас</a></li>
-                    <li class="menu__item"><a href="#services" class="menu_link">Услуги</a></li>
-                    <li class="menu__item"><a href="#stock"    class="menu_link">Акции</a></li>
-                    <li class="menu__item"><a href="#contacts" class="menu_link">Контакты</a></li>
-                </ul>
-            </nav>
+          </nav>
         </div>
- </header>
- <section id="about_us" class="section section__abou_us">
-    <div  class="container container__background">
-        <div class="abou_us__content">
-        <h1 class="title text--shadow">Stomat Family</h1>
-        <h2 class="full-title text--shadow">doctor:Vasiliev O.I.</h2>
-        <p class="text text--shadow">Семейная стоматологическая клиника, с командой врачей под руководством Олега Игоровича, предоставляет полный спектр стоматологических услуг для всей семьи. Наша клиника оснащена современным оборудованием, что позволяет нам проводить лечение на высоком уровне.</p>
-        </div>
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide "><img src="img/slide1.jpg" class="slider-img"/></div>
-              <div class="swiper-slide "><img src="img/slide2.jpg"class="slider-img"/></div>
-              <div class="swiper-slide "><img src="img/slide3.jpg"class="slider-img"/></div>
-            </div>
-          </div>
-    </div>
- </section>
- <section id="services"  class="services">
-    <div class="container services_container">
-    <h1 class="title title_services"> Наши услуги </h1>
-    <p class="text text_services">Мы предлагаем нашим клиентам все виды эстетической и лечебной стоматологии</p>
-    <div id="accordion" class="accordion" >
-        <div class="accordion__item">
-          <div class="accordion__header">
-            Срочная стоматологическая помощь
-          </div>
-          <div class="accordion__body">
-            <div class="accordion__content">
-                — Помощь при острой зубной боли<br>
-                — Помощь при зубном абсцессе<br>
-                — Реставрация сломанного или выбитого зуба<br>
-                — Лечение инфекций полости рта и зубов<br>
-                — Удаление зуба мудрости<br>
-            </div>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <div class="accordion__header">
-            Терапевтическая стоматология 
-          </div>
-          <div class="accordion__body">
-            <div class="accordion__content">
-                — Профилактические и диагностические консультации<br>
-                — Диагностика полости рта на выявление гингивита<br>
-                — Другие стоматологические услуги<br>
-            </div>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <div class="accordion__header">
-            Педиатрическая стоматология
-          </div>
-          <div class="accordion__body">
-            <div class="accordion__content">
-                —Консультации и диагностика полости рта<br>
-                — Детская ортодонтия<br>
-                — Лечение заболеваний десен<br>
-            </div>
-          </div>
-        </div>
-        <div class="accordion__item">
-            <div class="accordion__header">
-              Косметическая стоматология 
-            </div>
-            <div class="accordion__body">
-              <div class="accordion__content">
-                — Отбеливание зубов<br>
-                — Виниры и имплантация зубов<br>
-                — Керамические коронки и мосты<br>
+    </header>
+    <main>
+        <section id="about_us" class="about_us">
+          <div class="container container__about_us">
+            <div class="abou_us__content">
+              <h1 class="title">Stomat Family</h1>
+              <h2 class="full-title">doctor:Vasiliev O.I.</h2>
+              <p class="text">Семейная стоматологическая клиника, с командой врачей под руководством Олега Игоровича, предоставляет полный спектр стоматологических услуг для всей семьи. Наша клиника оснащена современным оборудованием, что позволяет нам проводить лечение на высоком уровне.</p>
               </div>
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide "><img src="img/slide1.jpg" class="slider-img"/></div>
+                  <div class="swiper-slide "><img src="img/slide2.jpg"class="slider-img"/></div>
+                  <div class="swiper-slide "><img src="img/slide3.jpg"class="slider-img"/></div>
+                </div>
+              </div>
+          </div>
+        </section>
+        <section id="services"  class="services">
+          <div class="container services_container">
+          <h1 class="title title_services"> Наши услуги </h1>
+          <p class="text text_services">Мы предлагаем нашим клиентам все виды эстетической и лечебной стоматологии</p>
+          <div id="accordion" class="accordion" >
+              <div class="accordion__item">
+                <h2 class="accordion__header">
+                  Срочная стоматологическая помощь
+                </h2>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                      — Помощь при острой зубной боли<br>
+                      — Помощь при зубном абсцессе<br>
+                      — Реставрация сломанного или выбитого зуба<br>
+                      — Лечение инфекций полости рта и зубов<br>
+                      — Удаление зуба мудрости<br>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Терапевтическая стоматология 
+                </div>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                      — Профилактические и диагностические консультации<br>
+                      — Диагностика полости рта на выявление гингивита<br>
+                      — Другие стоматологические услуги<br>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__header">
+                  Педиатрическая стоматология
+                </div>
+                <div class="accordion__body">
+                  <div class="accordion__content">
+                      —Консультации и диагностика полости рта<br>
+                      — Детская ортодонтия<br>
+                      — Лечение заболеваний десен<br>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                  <div class="accordion__header">
+                    Косметическая стоматология 
+                  </div>
+                  <div class="accordion__body">
+                    <div class="accordion__content">
+                      — Отбеливание зубов<br>
+                      — Виниры и имплантация зубов<br>
+                      — Керамические коронки и мосты<br>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
-      </div>
-    </div>
-
-
-</section>
-<section id="stock" class="section stock">
-  <div class="stock__container">
-    <h1 class="title">Постійно діючі акції</h1>
-    <p class="text">Ми зацікавлені у довгостроковій співпраці із Вами, тому пропонуємо ряд цікавих пропозицій, які допоможуть заощадити Ваші кошти.</p>
-    <h3 class="full-title">Запроси друга</h3>
-    <p class="text">Знижка 10% за кожну людину, яка прийшла до нас за Вашою рекомендацією.</p>
-    <h3 class="full-title">Сімейна знижка</h3>
-    <p class="text">-10% на лікування кожного члена Вашої родини.</p>
-    <h3 class="full-title">Безкоштовні консультації</h3>
-    <p class="text">Консультації та призначення плану лікування.</p></div>
-  <div class="bg background"><div class="bg midground">
-    <div class="bg foreground">
-      </div></div></div>
-
-
-</section>
- <footer id="contacts" class="footer">
-    <div class="container contacts">
-        <ul class="contacts__list">
-          <li class="contacts_item item--hover">
-            <img src="img/address.png" class="item_img" /><a href="https://www.google.com/maps/place/Стоматология+доктора+Васильева+О.И.,+проспект+Героїв+Сталінграда,+18-Б,+Київ,+04210/@50.5082945,30.5128695,16z/data=!4m14!1m7!3m6!1s0x40d4d2198efdc975:0xaad9e6ae1d7ffe10!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGPINC00L7QutGC0L7RgNCwINCS0LDRgdC40LvRjNC10LLQsCDQni7QmC4sINC_0YDQvtGB0L_QtdC60YIg0JPQtdGA0L7Rl9CyINCh0YLQsNC70ZbQvdCz0YDQsNC00LAsIDE4LdCRLCDQmtC40ZfQsiwgMDQyMTA!8m2!3d50.5082945!4d30.5128695!16s%2Fg%2F11c6vvrw3h!3m5!1s0x40d4d2198efdc975:0xaad9e6ae1d7ffe10!8m2!3d50.5082945!4d30.5128695!16s%2Fg%2F11c6vvrw3h?authuser=0" target="_blank">Проспект Героїв Сталінграда,18-Б</a></li>
-        <li class="contacts_item item--hover"><img src="img/phone.png" class="item_img"/><a href="tel:+380685677358">+38 (068) 567 73 58</a></li>
-        <li class="contacts_item"><img src="img/worktime.png" class="item_img"/><span>Пн, Ср, Пт<br>С 10:00-19:00</span></li>
-        </ul>
-      
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.3906443308883!2d30.510294576378456!3d50.50829788319727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d2198efdc975%3A0xaad9e6ae1d7ffe10!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGPINC00L7QutGC0L7RgNCwINCS0LDRgdC40LvRjNC10LLQsCDQni7QmC4!5e0!3m2!1suk!2sua!4v1682437284896!5m2!1suk!2sua" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script src="js/slider.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="js/idscroll.js"></script>
-<script src="js/acordion.js"></script>
-</body>
+      </section>
+      <section id="stock" class="stock">
+        <div class="container stock__container">
+          <h1 class="title">Постійно діючі акції</h1>
+          <p class="text">Ми зацікавлені у довгостроковій співпраці із Вами, тому пропонуємо ряд цікавих пропозицій, які допоможуть заощадити Ваші кошти.</p>
+          <h3 class="full-title">Запроси друга</h3>
+          <p class="text">Знижка 10% за кожну людину, яка прийшла до нас за Вашою рекомендацією.</p>
+          <h3 class="full-title">Сімейна знижка</h3>
+          <p class="text">-10% на лікування кожного члена Вашої родини.</p>
+          <h3 class="full-title">Безкоштовні консультації</h3>
+          <p class="text">Консультації та призначення плану лікування.</p>
+        </div>
+        <div class="bg background">
+          <div class="bg midground">
+          <div class="bg foreground">
+            </div></div></div>
+      </section>
+      <footer id="contacts" class="footer">
+        <div class="container contacts">
+            <ul class="contacts__list">
+              <li class="contacts_item"><img src="img/Logo.png" alt="" class="Logo" /></li>
+              <li class="contacts_item item--hover">
+                <img src="img/address.png" class="item_img" /><a href="https://www.google.com/maps/place/Стоматология+доктора+Васильева+О.И.,+проспект+Героїв+Сталінграда,+18-Б,+Київ,+04210/@50.5082945,30.5128695,16z/data=!4m14!1m7!3m6!1s0x40d4d2198efdc975:0xaad9e6ae1d7ffe10!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGPINC00L7QutGC0L7RgNCwINCS0LDRgdC40LvRjNC10LLQsCDQni7QmC4sINC_0YDQvtGB0L_QtdC60YIg0JPQtdGA0L7Rl9CyINCh0YLQsNC70ZbQvdCz0YDQsNC00LAsIDE4LdCRLCDQmtC40ZfQsiwgMDQyMTA!8m2!3d50.5082945!4d30.5128695!16s%2Fg%2F11c6vvrw3h!3m5!1s0x40d4d2198efdc975:0xaad9e6ae1d7ffe10!8m2!3d50.5082945!4d30.5128695!16s%2Fg%2F11c6vvrw3h?authuser=0" target="_blank">Проспект Героїв Сталінграда,18-Б</a></li>
+            <li class="contacts_item item--hover"><img src="img/phone.png" class="item_img"/><a href="tel:+380685677358">+38 (068) 567 73 58</a></li>
+            <li class="contacts_item"><img src="img/worktime.png" class="item_img"/><span>Пн, Ср, Пт<br>С 10:00-19:00</span></li>
+            </ul>
+          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.3906443308883!2d30.510294576378456!3d50.50829788319727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d2198efdc975%3A0xaad9e6ae1d7ffe10!2z0KHRgtC-0LzQsNGC0L7Qu9C-0LPQuNGPINC00L7QutGC0L7RgNCwINCS0LDRgdC40LvRjNC10LLQsCDQni7QmC4!5e0!3m2!1suk!2sua!4v1682437284896!5m2!1suk!2sua" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        </div>
+    </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/idscroll.js"></script>
+    <script src="js/acordion.js"></script>
+  </body>
 </html>
